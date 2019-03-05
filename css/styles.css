@@ -49,40 +49,7 @@ table {
 /*FIN RESET*/
 
 
-@font-face {
-	font-family: Futura LT bt;
-	src: url(../fonts/futura_light_bt.ttf);
-}
-@font-face {
-	font-family: Brandon;
-	src: url(../fonts/Brandon.ttf);
-}
-@font-face {
-	font-family: Walbaum;
-	src: url(../fonts/Walbaum.ttf);
-}
-@font-face {
-	font-family: Whartillax;
-	src: url(../fonts/Whartillax.ttf);
-}
-body {
-	
-	font-family: "Brandon", sans-serif;
-	font-size: 16px;
-	background-size: cover;
-	overflow-wrap: break-word;
-}
-.accueil {
-	background: url(../img/historique/race/numero4.jpg) no-repeat;
-	background-size: cover;
-	min-height: 1000px;
-}
-header {
-	background-color: #5D0808;
-	font-family: "Futura LT bt", sans-serif;
-	font-weight: bold;
-	min-height: 150px;
-}
+
 .info:before {
 	background: url(../img/other/long_arrow_white_down.svg);
 }
@@ -90,8 +57,9 @@ header {
 	width: 1300px;
 	margin: 0 auto;
 }
+
 h1 {
-	font-family: "Walbaum", serif;
+	font-family: "Lato", serif;
 	font-size: 3em;
 	display: inline;
 	margin-left: 0.3em;
@@ -99,19 +67,15 @@ h1 {
 	color: white;
 }
 button {
-	border: 1px solid ;
+	border: 1px solid #5D0808;
 	padding: 0.5em 1em;
-	color: white;
-	background-color: #5D0808;
+	color: #5D0808;
 	border-radius: 5px;
-	font-size:.8em;
+	background-color: #FFFFFF;
 }
 .adoption {
-	border: 1px solid ;
-	padding: 0.5em 1em;
-	color: white;
-	background-color: #5D0808;
-	border-radius: 10px;
+
+	color: #5D0808;;
 	font-size:1.3em;
 	margin: 0 auto 1.8em;
 	display: block;
@@ -124,19 +88,24 @@ li {
 nav, ul {
 	display: inline;
 }
-li a {
-	padding: 0em 0.2em;
-	
+nav {
+	position: relative;
+	left: 400px;
+	bottom: 100px;
 }
+
+
 li a {
 	text-decoration: none;
 	color: white;
+	font-variant: small-caps;
+    margin: 0 0.5em;
 }
 a{
-	color: #8C5923;
+	color: #238c6a;
 	text-decoration: none;
 }
-ul a:visited, ul a:hover{
+.active , header ul a:hover{
 	color: white;
 	border-bottom: 1px solid white;
 	padding-bottom: 1em;
@@ -144,7 +113,7 @@ ul a:visited, ul a:hover{
 svg {
 	display: inline;
 	vertical-align: sub;
-	margin: 0 4em;
+	margin: 0 2em;
 }
 nav h2 {
 	text-indent: -9999px;
@@ -157,12 +126,13 @@ h2 {
 	margin-top: 2em;
 	margin-left: 2.5em;
 	font-size: 1.5em;
-	border-bottom: 1px solid #5D0808;
+	border-bottom: 1px solid #238c6a;
 	font-family: "Futura LT bt", sans-serif;
 	padding: 0.5em 1em;
 	width: 150px;
 	text-align: center;
 }
+
 .message {
 	width: 40%;
 }
@@ -198,14 +168,19 @@ p {
 	color: #5D0808;
 	margin-top: 1.5em;
 }
-
+.message{
+	width: 500px;
+}
+.commentaire{
+	margin-left: 2em;
+}
 dl {
 	margin: 0 auto;
 	width: 300px;
 	overflow: hidden;
 	clear: both;
 	margin-bottom: 2em;
-	border: 1px solid #D9AB7A;
+	border: 1px solid #238c6a;
 	padding: 1.5em;
 }
 
@@ -228,21 +203,16 @@ dd, dt {
 	width: 150px;
 }
 
- img {
+ .border {
 	width: 25%;
 	height: auto;
 	border: thick double #666666;
-	margin: 6.5em 2em 2em;
-	transform: scale(1);
-	transition: 1s;
-}
- img:hover {
-	transform: scale(1.2);
-	transition: 1s;
+	margin: 0em 2em;
 }
 
+
 .chatons{
-	margin: 0 auto;
+	margin: 6em auto 2em;
 	width: 1200px;
 	display: flex;
 	justify-content: space-around;
@@ -258,7 +228,7 @@ dd, dt {
 .chats img {
 	width: 25%;
 	border: thick double #666666;
-	margin: 6.5em 3.5em 2em;
+	margin: 2em 3.5em 2em;
 
 }
 .lol {
@@ -268,24 +238,117 @@ dd, dt {
 }
 
 
+
+
+
+/******************/
+/*****GENERAL******/
+/*****************/
+
+@font-face {
+	font-family: Futura LT bt;
+	src: url(../fonts/futura_light_bt.ttf);
+}
+@font-face {
+	font-family: Brandon;
+	src: url(../fonts/Brandon.ttf);
+}
+@font-face {
+	font-family: 'Lato';
+	src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+	font-family: 'Rage';
+	src: url(../fonts/Rage.ttf);
+}
+body {
+	
+	font-family: "Brandon", sans-serif;
+	font-size: 16px;
+	background-size: cover;
+	overflow-wrap: break-word;
+}
+.accueil {
+	background: url(../img/historique/race/numero4.jpg) no-repeat;
+	background-size: cover;
+	min-height: 1000px;
+}
+header {
+	background-image: linear-gradient(#cad15d,#238c6a);
+	font-family: "Futura LT bt", sans-serif;
+	font-weight: bold;
+	min-height: 150px;
+}
 footer {
-	max-height: 50px;
-	background-color: #854545;
+	max-height: 150px;
+	background-color: #0b2b21;
 	color: white;
+	margin-top: 5em;
 }
 footer p {
 	width: 190px;
 	margin: auto;
 	padding: 1.06em 0;
 }
-h3{
+.nav-footer {
+	position: initial;
+	margin: 0 auto 1em;
+	width: 500px;
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.der{
+	padding-top: 0.5em;
+}
+
+/******************/
+/*****ACCUEIL******/
+/*****************/
+
+
+/******************/
+/*****CHATONS******/
+/*****************/
+
+
+/*****************/
+/*****CHATS******/
+/****************/
+.chat h2{
 	margin: 1.5em 2.5em;
     font-family: "Futura Lt Bt", sans-serif;
     font-size: 1.3em;
+    width: 80px;
 }
-h4 {
-	font-family: "Whartillax";
-	margin-left: 2.5em;
+h3 {
+	font-family: "Rage";
+	font-size: 2em;
+	margin: 2em auto;
+    width: 400px;
+}
+.nero{
+	width: 400px;
+}
+.zeus{
+	width: 250px;
+}
+.acapella {
+ 	width: 240px;
+}
+.douchka{
+	width: 230px;
+}
+.katrina{
+	width: 170px;
+}
+.chat p {
+	width: 600px;
+    margin: 1.5em auto;
+    border-left: 1px solid #238c6a;
+    padding-left: 1.5em;
+    line-height: 30px;
 }
 
 /*****************/
@@ -297,4 +360,33 @@ h4 {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
+}
+/*********************/
+/*****HISTORIQUE******/
+/*********************/
+
+/**********************/
+/*****Commentaires*****/
+/**********************/
+
+.comments:before{
+	content: '‘';
+	font-size: 5em;
+	font-family: "didot";
+}
+.commentes:after {
+	content: "’";
+	font-size: 5em;
+	font-family: "didot";
+}
+.comments {
+	margin: 2em auto;
+	width: 600px;
+}
+.comments+.comments{
+	margin-bottom: 4em;
+}
+.person {
+	text-align: right;
+	font-size: 0.7em;
 }
