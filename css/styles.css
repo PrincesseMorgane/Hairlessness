@@ -50,61 +50,29 @@ table {
 
 
 
-.info:before {
-	background: url(../img/other/long_arrow_white_down.svg);
-}
-.hum {
-	width: 1300px;
-	margin: 0 auto;
-}
-
 h1 {
-	font-family: "Lato", serif;
 	font-size: 3em;
 	display: inline;
 	margin-left: 0.3em;
 	font-weight: normal;
-	color: white;
+
 }
 button {
-	border: 1px solid #5D0808;
+	border: 1px solid #238c6a;
 	padding: 0.5em 1em;
-	color: #5D0808;
+	color: #238c6a;
 	border-radius: 5px;
 	background-color: #FFFFFF;
 }
 .adoption {
 
-	color: #5D0808;;
+	color: #238c6a;;
 	font-size:1.3em;
 	margin: 0 auto 1.8em;
 	display: block;
     width: 160px;
 }
-li {
-	display: inline-block;
-	
-}
-nav, ul {
-	display: inline;
-}
-nav {
-	position: relative;
-	left: 400px;
-	bottom: 100px;
-}
 
-
-li a {
-	text-decoration: none;
-	color: white;
-	font-variant: small-caps;
-    margin: 0 0.5em;
-}
-a{
-	color: #238c6a;
-	text-decoration: none;
-}
 .active , header ul a:hover{
 	color: white;
 	border-bottom: 1px solid white;
@@ -144,11 +112,11 @@ label {
 textarea{
 	width: 100%;
 	margin: .8em 0em;
-	border: #5D0808 1px solid;
+	border: #238c6a 1px solid;
 }
 input {
 	border: 0;
-    border-bottom: #5D0808 1px solid;
+    border-bottom: #238c6a 1px solid;
     background: none;
     width: 100%;
     margin: 1.5em 0em;
@@ -165,7 +133,7 @@ p {
 }
 .tel {
 	display: block;
-	color: #5D0808;
+	color: #238c6a;
 	margin-top: 1.5em;
 }
 .message{
@@ -207,7 +175,7 @@ dd, dt {
 	width: 25%;
 	height: auto;
 	border: thick double #666666;
-	margin: 0em 2em;
+	margin: 1em 2em;
 }
 
 
@@ -225,8 +193,8 @@ dd, dt {
 	flex-wrap: wrap;
 	align-items: center;
 }
-.chats img {
-	width: 25%;
+ img {
+
 	border: thick double #666666;
 	margin: 2em 3.5em 2em;
 
@@ -258,8 +226,8 @@ dd, dt {
 	src: url(../fonts/Lato-Light.ttf);
 }
 @font-face {
-	font-family: 'Rage';
-	src: url(../fonts/Rage.ttf);
+	font-family: 'Caflisch Script';
+	src: url(../fonts/Caflisch-Script.ttf);
 }
 body {
 	
@@ -278,6 +246,30 @@ header {
 	font-family: "Futura LT bt", sans-serif;
 	font-weight: bold;
 	min-height: 150px;
+}
+li {
+	display: inline-block;
+	
+}
+nav, ul {
+	display: inline;
+}
+nav {
+	position: relative;
+	left: 300px;
+	bottom: 100px;
+}
+
+li a {
+	text-decoration: none;
+	color: #463f35;
+	font-variant: small-caps;
+    margin: 0 0.5em;
+    font-size: 1.2em;
+}
+a{
+	color: #238c6a;
+	text-decoration: none;
 }
 footer {
 	max-height: 150px;
@@ -298,6 +290,10 @@ footer p {
     text-align: center;
     padding-top: 1em;
 }
+.nav-footer li a {
+	color: white;
+	font-size: 1em;
+}
 
 .der{
 	padding-top: 0.5em;
@@ -317,31 +313,39 @@ footer p {
 /*****CHATS******/
 /****************/
 .chat h2{
-	margin: 1.5em 2.5em;
+	margin: 4.5em 2.5em 0em;
     font-family: "Futura Lt Bt", sans-serif;
-    font-size: 1.3em;
-    width: 80px;
+    font-size: 1.6em;
+    width: 100px;
 }
 h3 {
-	font-family: "Rage";
-	font-size: 2em;
-	margin: 2em auto;
+	font-family: "Caflisch Script";
+	font-size: 3em;
+	margin: 4.5em auto 1em;
     width: 400px;
 }
 .nero{
-	width: 400px;
+	width: 480px;
+	padding: 0 0.5em;
+    border-left: 1px solid #0b2b21;
+    border-right: 1px solid #0b2b21;
+    margin-top: 1.5em;
 }
-.zeus{
-	width: 250px;
+.zeus, .douchka, .acapella{
+	width: 300px;
+	padding: 0 0.5em;
+    border-left: 1px solid #0b2b21;
+    border-right: 1px solid #0b2b21;
 }
 .acapella {
- 	width: 240px;
+    margin-top: 1.5em;
 }
-.douchka{
-	width: 230px;
-}
+
 .katrina{
-	width: 170px;
+	width: 200px;
+	padding: 0 0.5em;
+    border-left: 1px solid #0b2b21;
+    border-right: 1px solid #0b2b21;
 }
 .chat p {
 	width: 600px;
@@ -350,31 +354,60 @@ h3 {
     padding-left: 1.5em;
     line-height: 30px;
 }
+em{
+	font-weight: bold;
+}
 
 /*****************/
 /*****ALBUM******/
 /****************/
 
 .album{
+	margin: 3em auto 6em;
+	width: 1200px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
 }
+video {
+	margin-top: 1em;
+}
+.evolution {
+ width: 150px;
+ font-family: "Futura LT Bt", sans-serif;
+ font-size: 1.6em;
+ margin: 4.5em 2.5em 0em;
+}
+
 /*********************/
 /*****HISTORIQUE******/
 /*********************/
+.naissance{
+	width: 420px;
+}
+.caractere {
+	width: 310px;
+}
+
+.look{
+	width: 120px;
+}
+.origine, .sante {
+	width: 300px;
+}
+
 
 /**********************/
 /*****Commentaires*****/
 /**********************/
 
-.comments:before{
+q:before{
 	content: '‘';
 	font-size: 5em;
 	font-family: "didot";
 }
-.commentes:after {
+q:after {
 	content: "’";
 	font-size: 5em;
 	font-family: "didot";
