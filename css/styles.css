@@ -239,7 +239,7 @@ body {
 .accueil {
 	background: url(../img/historique/race/numero4.jpg) no-repeat;
 	background-size: cover;
-	min-height: 1000px;
+	min-height: 800px;
 }
 header {
 	background-image: linear-gradient(#cad15d,#238c6a);
@@ -302,7 +302,9 @@ footer p {
 /******************/
 /*****ACCUEIL******/
 /*****************/
-
+.accueil li a {
+	color: white;
+}
 
 /******************/
 /*****CHATONS******/
@@ -407,11 +409,11 @@ q:before{
 	font-size: 5em;
 	font-family: "didot";
 }
-q:after {
+/*q:after {
 	content: "’";
 	font-size: 5em;
 	font-family: "didot";
-}
+}*/
 .comments {
 	margin: 2em auto;
 	width: 600px;
